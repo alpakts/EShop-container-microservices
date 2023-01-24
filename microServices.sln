@@ -68,11 +68,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FC903BC5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{661C42FB-FA2C-4CD8-8B29-C8DD5C79CB62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.UnitTest", "tests\BuildingBlocks\EventBus.UnitTest\EventBus.UnitTest.csproj", "{F5E05F82-C4A3-4FE8-8544-98A95779DFBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.UnitTest", "tests\BuildingBlocks\EventBus.UnitTest\EventBus.UnitTest.csproj", "{F5E05F82-C4A3-4FE8-8544-98A95779DFBC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CatalogService", "CatalogService", "{B3E6905B-C36D-40B5-9E29-112C4EB266A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.Api", "src\Services\CatalogService\CatalogService.Api\CatalogService.Api.csproj", "{23A3D1E2-2236-4F97-AE3B-ED7E17B1677F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogService.Api", "src\Services\CatalogService\CatalogService.Api\CatalogService.Api.csproj", "{23A3D1E2-2236-4F97-AE3B-ED7E17B1677F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker-compose-files", "docker-compose-files", "{637A2C57-4657-41FD-8634-395230645DDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "consul", "consul", "{1D6E8618-DA31-4C72-BD2C-3BD614ACC23D}"
+	ProjectSection(SolutionItems) = preProject
+		consul.yaml = consul.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq", "rabbitmq", "{46BEE0FF-FB40-42B2-9667-FCE0CA4B5F22}"
+	ProjectSection(SolutionItems) = preProject
+		rabbitmq.yaml = rabbitmq.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "redis", "redis", "{3F3B9D42-3739-4524-920B-F2FFC7B5B136}"
+	ProjectSection(SolutionItems) = preProject
+		redis.yaml = redis.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -180,6 +197,9 @@ Global
 		{F5E05F82-C4A3-4FE8-8544-98A95779DFBC} = {661C42FB-FA2C-4CD8-8B29-C8DD5C79CB62}
 		{B3E6905B-C36D-40B5-9E29-112C4EB266A9} = {B64498CB-57AE-495A-9ECC-9C70582FDDA0}
 		{23A3D1E2-2236-4F97-AE3B-ED7E17B1677F} = {B3E6905B-C36D-40B5-9E29-112C4EB266A9}
+		{1D6E8618-DA31-4C72-BD2C-3BD614ACC23D} = {637A2C57-4657-41FD-8634-395230645DDE}
+		{46BEE0FF-FB40-42B2-9667-FCE0CA4B5F22} = {637A2C57-4657-41FD-8634-395230645DDE}
+		{3F3B9D42-3739-4524-920B-F2FFC7B5B136} = {637A2C57-4657-41FD-8634-395230645DDE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4081613A-7C73-4038-96D1-FA43C7E8E704}
