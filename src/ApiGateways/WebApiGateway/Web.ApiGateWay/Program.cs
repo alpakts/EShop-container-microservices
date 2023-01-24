@@ -1,4 +1,8 @@
-var builder = WebApplication.CreateBuilder(args);
+using Ocelot.Middleware;
+
+var builder = WebApplication.CreateBuilder();
+builder.Configuration.SetBasePath(builder.Environment.ContentRootPath).AddJsonFile("ocelot.json").AddEnvironmentVariables();
+
 
 // Add services to the container.
 
@@ -21,5 +25,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.UseOcelot().GetAwaiter().GetResult(); 
 app.Run();
